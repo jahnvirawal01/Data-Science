@@ -56,13 +56,13 @@ for i in range(13):
     print(f"The number is: {choice}")
     if choice in player1:
         player1.remove(choice)
-        print(f"Now the card for player 1 is: {player1}")
-        print(f"Now the card for player 2 is: {player2}")
+        print(f"Now the card for player 1 is:", *player1)
+        print(f"Now the card for player 2 is:", *player2)
         print()
     else:
         player2.remove(choice)
-        print(f"Now the card for player 1 is: {player1}")
-        print(f"Now the card for player 2 is: {player2}")
+        print(f"Now the card for player 1 is:", *player1)
+        print(f"Now the card for player 2 is:", *player2)
         print()
     
     if len(player1) == 0:
